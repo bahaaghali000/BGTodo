@@ -1,0 +1,104 @@
+header > h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav form {
+    width: 595px;
+    align-items: center;
+}
+
+form > input {
+    width: 100%;
+    background-color: transparent;
+} 
+
+.nav form > span{
+    color: var(--purple);
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav form > span:hover{
+    color: #5850DD;
+}
+
+form > input::placeholder{
+    color: #C3C1E5;
+}
+
+.nav select{
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    width: 100px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.nav select option {
+    background-color: var(--white);
+    color: var(--purple);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav > div:last-child{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav .toggle-mode{
+    background-color: var(--purple);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 22px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .nav form{
+        width: 400px;
+    }
+    .nav{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .nav form{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .nav{
+        display: block;
+        text-align: center;
+        
+    }
+
+    .nav > div:last-child{
+        justify-content: space-between;
+    }
+}
